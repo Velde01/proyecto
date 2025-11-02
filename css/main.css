@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #fcfbd6; 
+    color: #550302;
+    font-size: 20px;
+} 
+
+.minilogo { 
+    width: 60px;   
+    height: auto;  
+} 
+
+/* Header */
+header, header nav {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background-color: #550302;
+    padding-right: 2%;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+header a {
+    color: #550302;
+    text-decoration: none;
+    filter: drop-shadow(10px 10px 10px #fcfbd6);
+}
+
+header a img {
+    width: 40%;   /* ancho fijo */
+    height: auto;   /* alto proporcional */
+}
+
+header nav ul li a .boton {
+    background-color: #fcfbd6;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.miubi {
+    background-color: #fcfbd6;
+    display: inline-block;
+    padding: 1px;
+    border-radius: 18px;
+}
+
+/* Main */
+main {
+    text-align: center;
+}
+
+main section img { 
+    width: 400px;   
+    height: 300px;  
+} 
+
+footer a img {
+    width: 100px;   
+    height: auto;  
+} 
+
+.oferta { 
+    width: 900px;   
+    height: 600px;  
+} 
+
+/* Footer */
+footer { 
+    background-color: #550302; 
+    color: #fcfbd6; 
+    text-align: center;  
+} 
+
+/* Dentro de contactos */
+main section form,section form { 
+    line-height: 40px; 
+} 
+
+main section table {
+    margin: 0 auto;
+}
+
+/* Dentro de publicacion */
+.imgprincipal {
+    width: 700px;   
+    height: auto;  
+} 
+
+.descripcion {
+    width: 60%;
+    border: 2px solid #550302; 
+} 
+
+/* Dentro de Autos */
+.mainauto {
+    padding-top: 20px;
+} 
+

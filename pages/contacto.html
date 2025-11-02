@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1ndCars-Contacto</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- link tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="../index.html"><img src="../img/f1ndcarslogo.png" alt=""></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="autos.html"><div class="boton">Autos</div></a>
+                </li>
+                <li>
+                    <a href="contacto.html"><div class="boton">Contacto</div></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section>
+            <h2>Contáctanos</h2>
+            <form action="/submit" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"><br>
+
+                <label for="email">Correo:</label>
+                <input type="text" id="email" name="email"><br>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea><br>
+
+                <input type="submit" value="Enviar"><br>
+            </form>
+        </section>
+        <section>
+            <form action="/submit" method="post">
+                <p>Puedes encontrarnos en:</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104777.2889176853!2d-56.222537028969946!3d-34.84893285968372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80ffc63bf7d3%3A0x6b321b2e355bec99!2sMontevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1759356892575!5m2!1ses-419!2suy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Lunes a Viernes: 08:00 a 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sabados: 08:00 a 14:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 F1ndCars. Todos los derechos reservados.</p>
+        <a href="https://www.instagram.com/" target="_blank"> 
+            <img src="../img/logoinstagram.png" alt=""> 
+        </a>
+    </footer>
+
+</body>
+</html>
