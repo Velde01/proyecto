@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F1ndCars-Publicacion</title>
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- link css -->
     <link rel="stylesheet" href="../css/main.css">
     <!-- link tipografia -->
@@ -15,57 +17,65 @@
 
     <!-- Header -->
     <header>
-        <a href="../index.html"><img src="../img/f1ndcarslogo.png" alt=""></a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="autos.html"><div class="boton">Autos</div></a>
-                </li>
-                <li>
-                    <a href="contacto.html"><div class="boton">Contacto</div></a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/f1ndcarslogo.png" alt="Logo F1ndCars" width="120">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="autos.html">Autos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
+    <main class="container mt-4">
         <h1>Byd Seagull Gs - Ev300 - Eléctrico 2025 0km</h1>
         <h2>US$ 19.990</h2>
         <section>
-            <img class="imgprincipal" src="https://http2.mlstatic.com/D_NQ_NP_2X_949770-MLU82762797343_022025-F.webp" alt=""><br>
+            <img class="text-center" src="https://http2.mlstatic.com/D_NQ_NP_2X_949770-MLU82762797343_022025-F.webp" alt="Foto principal BYD Seagull"><br>
             <img class="minilogo" src="https://http2.mlstatic.com/D_NQ_NP_977032-MLU82762797341_022025-O.webp" alt="">
             <img class="minilogo" src="https://http2.mlstatic.com/D_NQ_NP_2X_979587-MLU82762797381_022025-F.webp" alt="">
+        </section>
+        <section class="descripcion mt-4">
+            <h2>Descripción</h2>
+            <p>BYD Seagull GS - EV300 - Eléctrico Año 2025 0 km. USD 19.990. (Consultar colores disponibles).
+            </p>
+            <ul>
+                <li>Motor Eléctrico • Transmisión Automática • Dirección Asistida</li>
+                <li>Autonomía de batería: 300 km</li>
+                <li>Color: Blanco</li>
+                <li>Puertas: 5</li>
+                <li>Acepta permuta: Sí</li>
+            </ul>
         </section>
     </main>
 
     <section>
-        <div class="descripcion"> 
-            <h2>Descripción</h2>
-            <p>BYD Seagull Gs - EV300 - Eléctrico Año 2025 0 km - USD 19.990. (Consultar disponibilidad de colores)</p>
-            <p>EQUIPAMIENTO: Motor Eléctrico • Transmisión Automática • Dirección Asistida. Automomía de la batería: 300 km.</p>
-            <p>Color: Blanco</p>
-            <p>Tipo de combustible: Eléctrico</p>
-            <p>Transmisión: Automática</p>
-            <p>Con precio negociable: No</p>
-            <p>Puertas: 5</p>
-            <p>Sensor de estacionamiento: Sí</p>
-            <p>Acepta permuta: Sí</p>
-        </div>
-        <h2>Contacta al vendedor</h2>
-        <form action="/submit" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre"><br>
-
-            <label for="email">Correo:</label>
-            <input type="text" id="email" name="email"><br>
-
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje"></textarea><br>
-            
-            <label for="celular">Celular:</label>
-            <input type="text" id="celular" name="celular"></input><br>
-
-            <input type="submit" value="Enviar"><br>
+        <form class="mt-3">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo:</label>
+                <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" rows="3" placeholder="Tu mensaje"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="celular" class="form-label">Celular:</label>
+                <input type="celular" class="form-control" id="celular" placeholder="Tu celular">
+            </div>
+            <button type="submit" class="btn btn-dark">Enviar</button>
         </form>
     </section>
 
@@ -76,6 +86,9 @@
             <img src="../img/logoinstagram.png" alt=""> 
         </a>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     
 </body>
 </html>

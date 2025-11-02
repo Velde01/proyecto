@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F1ndCars-Autos</title>
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- link css -->
     <link rel="stylesheet" href="../css/main.css">
     <!-- link tipografia -->
@@ -15,33 +17,38 @@
     
     <!-- Header -->
     <header>
-        <a href="../index.html"><img src="../img/f1ndcarslogo.png" alt=""></a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="autos.html"><div class="boton">Autos</div></a>
-                </li>
-                <li>
-                    <a href="contacto.html"><div class="boton">Contacto</div></a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/f1ndcarslogo.png" alt="Logo F1ndCars" width="120">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="autos.html">Autos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- Contenido principal -->
-    <main class="mainauto">
-        <section>
-        <a href="publicacion.html">
-            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_949770-MLU82762797343_022025-F.webp" alt="">
-        </a>
-        <img src="https://http2.mlstatic.com/D_NQ_NP_867446-MLU86680836113_062025-O.webp" alt="">
-        <img src="https://http2.mlstatic.com/D_NQ_NP_917980-MLU79858830680_102024-O.webp" alt="">
-        <img src="https://http2.mlstatic.com/D_NQ_NP_945830-MLU93719523259_092025-O.webp" alt=""><br>
-        <img src="" alt="auto">
-        <img src="" alt="auto">
-        <img src="" alt="auto">
-        <img src="" alt="auto">
-        </section>
+    <main class="container mt-4">
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_949770-MLU82762797343_022025-F.webp" class="card-img-top" alt="BYD Seagull 2025">
+                    <div class="card-body">
+                        <h5 class="card-title">BYD Seagull 2025</h5>
+                        <p class="card-text">Eléctrico 0km - USD 19.990</p>
+                        <a href="publicacion.html" class="btn btn-danger">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -51,6 +58,9 @@
             <img src="../img/logoinstagram.png" alt=""> 
         </a>      
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 </html>

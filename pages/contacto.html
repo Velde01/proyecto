@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F1ndCars-Contacto</title>
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- link css -->
     <link rel="stylesheet" href="../css/main.css">
     <!-- link tipografia -->
@@ -15,41 +17,47 @@
 
     <!-- Header -->
     <header>
-        <a href="../index.html"><img src="../img/f1ndcarslogo.png" alt=""></a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="autos.html"><div class="boton">Autos</div></a>
-                </li>
-                <li>
-                    <a href="contacto.html"><div class="boton">Contacto</div></a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/f1ndcarslogo.png" alt="Logo F1ndCars" width="120">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="autos.html">Autos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- Contenido principal -->
     <main>
-        <section>
-            <h2>Contáctanos</h2>
-            <form action="/submit" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre"><br>
-
-                <label for="email">Correo:</label>
-                <input type="text" id="email" name="email"><br>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje"></textarea><br>
-
-                <input type="submit" value="Enviar"><br>
-            </form>
-        </section>
+        <h2>Contáctanos</h2>
+        <form class="mt-3">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo:</label>
+                <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" rows="3" placeholder="Tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Enviar</button>
+        </form>
         <section>
             <form action="/submit" method="post">
                 <p>Puedes encontrarnos en:</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104777.2889176853!2d-56.222537028969946!3d-34.84893285968372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80ffc63bf7d3%3A0x6b321b2e355bec99!2sMontevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1759356892575!5m2!1ses-419!2suy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <table>
+                <table class="descripcion mt-4">
                     <tbody>
                         <tr>
                             <td>Lunes a Viernes: 08:00 a 20:00</td>
@@ -70,6 +78,9 @@
             <img src="../img/logoinstagram.png" alt=""> 
         </a>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -7,10 +7,12 @@
 /* General */
 body {
     font-family: "Inter", sans-serif;
-    background-color: #fcfbd6; 
-    color: #550302;
-    font-size: 20px;
-} 
+    background-color: #550302;
+    color: #fcfbd6;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
 
 .minilogo { 
     width: 60px;   
@@ -18,36 +20,23 @@ body {
 } 
 
 /* Header */
-header, header nav {
-    display: flex;
-    align-items: center;
-    margin: auto;
-    background-color: #550302;
-    padding-right: 2%;
+header img {
+    width: 30%;
 }
 
-header nav ul {
-    display: flex;
-    list-style-type: none;
-    gap: 30px;
+/* Cambiar color del navbar Bootstrap */
+.navbar {
+    background-color: #550302 !important;
 }
 
-header a {
-    color: #550302;
-    text-decoration: none;
-    filter: drop-shadow(10px 10px 10px #fcfbd6);
+.navbar-nav .nav-link {
+    color: #fcfbd6 !important;
+    font-weight: 500;
 }
 
-header a img {
-    width: 40%;   /* ancho fijo */
-    height: auto;   /* alto proporcional */
-}
+.navbar-nav .nav-link:hover {
+    color: #fcfbd6 !important;
 
-header nav ul li a .boton {
-    background-color: #fcfbd6;
-    display: inline-block;
-    padding: 15px;
-    border-radius: 25px;
 }
 
 .miubi {
@@ -60,52 +49,149 @@ header nav ul li a .boton {
 /* Main */
 main {
     text-align: center;
+    padding: 20px;
 }
 
-main section img { 
-    width: 400px;   
-    height: 300px;  
-} 
-
-footer a img {
-    width: 100px;   
-    height: auto;  
-} 
-
-.oferta { 
-    width: 900px;   
-    height: 600px;  
-} 
-
-/* Footer */
-footer { 
-    background-color: #550302; 
-    color: #fcfbd6; 
-    text-align: center;  
-} 
-
-/* Dentro de contactos */
-main section form,section form { 
-    line-height: 40px; 
-} 
-
-main section table {
-    margin: 0 auto;
+h1, h2, h3 {
+    color: #fcfbd6;
+    margin-bottom: 10px;
 }
 
-/* Dentro de publicacion */
+/* Botones */
+.btn-danger {
+    background-color: #550302;
+    border: none;
+    color: #fcfbd6;
+}
+
+.btn-danger:hover {
+    background-color: #550302;
+    color: #fcfbd6;
+}
+
+/* Botones oscuros (como en contacto.html) */
+.btn-dark {
+    background-color: #550302 !important;
+    border: none;
+    color: #fcfbd6 !important;
+}
+
+.btn-dark:hover {
+    background-color: #550302 !important;
+    color: #fcfbd6 !important;
+}
+
+/* Imagenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 .imgprincipal {
-    width: 700px;   
-    height: auto;  
-} 
+    width: 700px;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 30px;
+}
 
 .descripcion {
-    width: 60%;
-    border: 2px solid #550302; 
-} 
+    background-color: #fcfbd6;
+    color: #550302;
+    border: 2px solid #550302;
+    border-radius: 12px;
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+}
 
-/* Dentro de Autos */
-.mainauto {
-    padding-top: 20px;
-} 
+/* Formularios */
+form {
+    background-color: #fcfbd6;
+    color: #550302;
+    padding: 20px;
+    border-radius: 12px;
+    width: 80%;
+    margin: 20px auto;
+    max-width: 600px;
+}
 
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"], form input[type="email"],form input[type="celular"], form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #550302;
+    border-radius: 8px;
+    background-color: #fcfbd6;
+    color: #550302;
+}
+
+form input[type="submit"], form button {
+    background-color: #550302;
+    color: #fcfbd6;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+    background-color: #550302;
+    transform: scale(1.05);
+}
+
+/* Tablas (en contacto) */
+.tabla {
+    padding: 5px 15px;
+    color: #550302;
+}
+
+/* footer */
+footer {
+    background-color: #3a0201;
+    color: #fcfbd6 ;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer img {
+    width: 30px;
+    margin-top: 8px;
+}
+
+/* media query mobile */
+@media (max-width: 768px) {
+    .descripcion {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .imgprincipal {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
