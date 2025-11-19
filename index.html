@@ -17,18 +17,18 @@
 
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark navegador">
+            <div class="container-fluid navegador-contenedor">
                 <a class="navbar-brand" href="index.html">
-                    <img src="img/f1ndcarslogo.png" alt="Logo F1ndCars" width="120">
+                    <img class="logo" src="img/f1ndcarslogo.png" alt="Logo F1ndCars">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="pages/autos.html">Autos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+                <div class="collapse navbar-collapse nav-cont-botones" id="navbarNav">
+                    <ul class="navbar-nav ms-auto botones">
+                        <li class="nav-item"><a class="nav-link navboton" href="pages/autos.html">Autos</a></li>
+                        <li class="nav-item"><a class="nav-link navboton" href="pages/contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -41,41 +41,35 @@
             <section class="main-principal-section1"> 
                 <h1>Bienvenido a F1ndCars</h1>
                 <p>Tu marketplace de automovilismo, encontrá tu auto y todo lo que necesita.</p>
-                <img class="oferta" src="https://www.cronicas.com.uy/uploads/61074-Car-one-3.jpg" alt="Publicidad">
-                <img class="oferta" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkTxaV8VoOZlCoVnU9qtxodrvsT6whkJXuIQ&s" alt="Publicidad">
+                <div class="publi">
+                    <img class="oferta1" src="https://www.cronicas.com.uy/uploads/61074-Car-one-3.jpg" alt="Publicidad">
+                    <img class="oferta2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkTxaV8VoOZlCoVnU9qtxodrvsT6whkJXuIQ&s" alt="Publicidad">
+                </div>
             </section>
             <section class="main-principal-section2">
                 <h2>Más visto</h2>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-                <div class="col">
-                    <div class="card h-100 shadow-sm">
+                <div class="mas-visto-grid">
+                    <div class="mas-item1">
                         <a href="pages/publicacion.html">
-                            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_949770-MLU82762797343_022025-F.webp" alt=""> 
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_949770-MLU82762797343_022025-F.webp" alt="Auto destacado - BYD Seagull">
                         </a>
                     </div>
+                    <div class="mas-item2">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_867446-MLU86680836113_062025-O.webp" alt="Auto 2">
+                    </div>
+                    <div class="mas-item3">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_917980-MLU79858830680_102024-O.webp" alt="Auto 3">
+                    </div>
+                    <div class="mas-item4">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_945830-MLU93719523259_092025-O.webp" alt="Auto 4">
+                    </div>
                 </div>
-                    <div class="col">
-                        <div class="card h-100 shadow-sm">
-                            <img src="https://http2.mlstatic.com/D_NQ_NP_867446-MLU86680836113_062025-O.webp" alt="">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 shadow-sm">
-                            <img src="https://http2.mlstatic.com/D_NQ_NP_917980-MLU79858830680_102024-O.webp" alt="">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 shadow-sm">
-                            <img src="https://http2.mlstatic.com/D_NQ_NP_945830-MLU93719523259_092025-O.webp" alt="">
-                        </div>
-                    </div>
-                </div >
             </section>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <p>&copy; 2025 F1ndCars. Todos los derechos reservados.</p>
         <a href="https://www.instagram.com/" target="_blank"> 
             <img class="minilogo" src="img/logoinstagram.png" alt=""> 

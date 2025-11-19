@@ -17,18 +17,18 @@
     
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark navegador">
+            <div class="container-fluid navegador-contenedor">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../img/f1ndcarslogo.png" alt="Logo F1ndCars" width="120">
+                    <img class="logo" src="../img/f1ndcarslogo.png" alt="Logo F1ndCars">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="autos.html">Autos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <div class="collapse navbar-collapse nav-cont-botones" id="navbarNav">
+                    <ul class="navbar-nav ms-auto botones">
+                        <li class="nav-item"><a class="nav-link navboton" href="autos.html">Autos</a></li>
+                        <li class="nav-item"><a class="nav-link navboton" href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -36,23 +36,21 @@
     </header>
 
     <!-- Contenido principal -->
-    <main class="container mt-4">
-        <div class="row justify-content-center mt-4">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_949770-MLU82762797343_022025-F.webp" class="card-img-top" alt="BYD Seagull 2025">
-                    <div class="card-body">
-                        <h5 class="card-title">BYD Seagull 2025</h5>
-                        <p class="card-text">Eléctrico 0km - USD 19.990</p>
-                        <a href="publicacion.html" class="btn btn-danger">Ver más</a>
-                    </div>
-                </div>
+    <main class="contenedor-autos">
+        <h1 class="titulo-autos">Autos disponibles</h1>
+        <div class="grid-autos">
+            <div class="tarjeta-auto">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_949770-MLU82762797343_022025-F.webp" class="card-img-top" alt="BYD Seagull 2025">
+                <h3>BYD Seagull 2025</h3>
+                <p>Eléctrico 0km - USD 19.990</p>
+                <a href="publicacion.html" class="nav-link nav-boton">Ver más</a>
             </div>
+            <div></div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <p>&copy; 2025 F1ndCars. Todos los derechos reservados.</p>
         <a href="https://www.instagram.com/" target="_blank"> 
             <img class="minilogo" src="../img/logoinstagram.png" alt=""> 

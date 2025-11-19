@@ -1,0 +1,14 @@
+//Variables
+@use "../utilities/variables" as *;
+
+@mixin centralizado {
+    text-align: center;
+    padding: 1rem;
+}
+
+@mixin tarjeta {
+    background-color: $color-footer;
+    border: 0.2rem solid $color-secundario; 
+    border-radius: 0.5rem;
+    padding: 1rem;
+}

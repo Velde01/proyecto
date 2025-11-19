@@ -1,0 +1,63 @@
+//Variables
+@use "../utilities/variables" as *;
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+body {
+    font-family: "Inter", sans-serif;
+    background-color: $color-principal;
+    color: $color-secundario;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.logo {
+    width: 40%;
+
+}
+
+.minilogo {
+    width: 100px;
+}
+
+/* Header */
+header {
+    .navegador {
+        padding-right: 4rem;
+        padding-left: 2rem;
+        .navegador-contenedor {
+            .nav-cont-botones {
+                .botones {
+                    gap: 3rem;
+                    .navboton {
+                        color: $color-secundario;
+                        font-size: 1.5rem;
+                        transition: all 0.3s ease-in-out;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: $color-footer;
+    padding-top: 1rem;
+}

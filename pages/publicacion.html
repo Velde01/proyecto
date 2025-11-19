@@ -17,33 +17,33 @@
 
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark navegador">
+            <div class="container-fluid navegador-contenedor">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../img/f1ndcarslogo.png" alt="Logo F1ndCars" width="120">
+                    <img class="logo" src="../img/f1ndcarslogo.png" alt="Logo F1ndCars">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="autos.html">Autos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <div class="collapse navbar-collapse nav-cont-botones" id="navbarNav">
+                    <ul class="navbar-nav ms-auto botones">
+                        <li class="nav-item"><a class="nav-link navboton" href="autos.html">Autos</a></li>
+                        <li class="nav-item"><a class="nav-link navboton" href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main class="container mt-4">
+    <main class="contenido">
         <h1>Byd Seagull Gs - Ev300 - Eléctrico 2025 0km</h1>
-        <h2>US$ 19.990</h2>
+        <h2 class="precio">US$ 19.990</h2>
         <section>
-            <img class="text-center" src="https://http2.mlstatic.com/D_NQ_NP_2X_949770-MLU82762797343_022025-F.webp" alt="Foto principal BYD Seagull"><br>
+            <img class="img-principal" src="https://http2.mlstatic.com/D_NQ_NP_2X_949770-MLU82762797343_022025-F.webp" alt="Foto principal BYD Seagull"><br>
             <img class="minilogo" src="https://http2.mlstatic.com/D_NQ_NP_977032-MLU82762797341_022025-O.webp" alt="">
             <img class="minilogo" src="https://http2.mlstatic.com/D_NQ_NP_2X_979587-MLU82762797381_022025-F.webp" alt="">
         </section>
-        <section class="descripcion mt-4">
+        <section class="descripcion">
             <h2>Descripción</h2>
             <p>BYD Seagull GS - EV300 - Eléctrico Año 2025 0 km. USD 19.990. (Consultar colores disponibles).
             </p>
@@ -57,30 +57,30 @@
         </section>
     </main>
 
-    <section>
-        <form class="mt-3">
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre:</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+    <section class="formulario-publicacion">
+        <form>
+            <div class="campo-form">
+                <label for="nombre">Nombre:</label>
+                <input placeholder="nombre" class="input" name="text" type="text">
             </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Correo:</label>
-                <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+            <div class="campo-form">
+                <label for="email">Correo:</label>
+                <input placeholder="email" class="input" name="text" type="text">
             </div>
-            <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje:</label>
-                <textarea class="form-control" id="mensaje" rows="3" placeholder="Tu mensaje"></textarea>
+            <div class="campo-form">
+                <label for="mensaje">Mensaje:</label>
+                <input placeholder="Mensaje" class="input" name="text" type="text">
             </div>
-            <div class="mb-3">
-                <label for="celular" class="form-label">Celular:</label>
-                <input type="celular" class="form-control" id="celular" placeholder="Tu celular">
+            <div class="campo-form">
+                <label for="celular">Celular:</label>
+                <input placeholder="Celular" class="input" name="text" type="text">
             </div>
-            <button type="submit" class="btn btn-dark">Enviar</button>
+            <button type="submit" class="btn-enviar">Enviar</button>
         </form>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <p>&copy; 2025 F1ndCars. Todos los derechos reservados.</p>
         <a href="https://www.instagram.com/" target="_blank"> 
             <img class="minilogo" src="../img/logoinstagram.png" alt=""> 

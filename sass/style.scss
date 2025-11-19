@@ -1,0 +1,12 @@
+//Reset
+@use "./base/reset" as *;
+
+//Index
+@use "./pages/index" as *;
+//Autos
+@use "./pages/autos" as *;
+//Publicacion
+@use "./pages/publicacion" as *;
+//Contacto
+@use "./pages/contacto" as *;
+

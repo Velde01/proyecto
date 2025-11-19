@@ -1,0 +1,47 @@
+//Variables
+@use "../utilities/variables" as *;
+//Mixin
+@use "../utilities/mixin" as *;
+
+/* Main-autos */
+.contenedor-autos {
+    @include centralizado;
+    display: grid;
+    grid-template-columns: 1fr;
+    .grid-autos {
+        .tarjeta-auto{
+            @include tarjeta;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.05);
+                a {
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* estilos de tablet-autos */
+@media screen and (min-width: 600px) {
+    .contenedor-autos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10% 1fr 1fr;
+        .titulo-autos {
+            grid-column: span 2;
+        }
+    }      
+}
+
+/* estilos de desktop-autos */
+@media screen and (min-width: 1024px) {
+    .contenedor-autos {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .titulo-autos {
+            grid-column: span 4;
+        }
+    }
+}
