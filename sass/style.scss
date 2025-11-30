@@ -9,4 +9,8 @@
 @use "./pages/publicacion" as *;
 //Contacto
 @use "./pages/contacto" as *;
+//MQ-tablet
+@use "../sass/layout/mq-tablet" as *;
+//MQ-desktop
+@use "../sass/layout/mq-desktop" as *;
 

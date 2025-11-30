@@ -46,11 +46,3 @@
         }
     };
 }
-
-/* estilos de desktop-contacto */
-@media screen and (min-width: 1024px){
-    .contenedor-contacto {
-        margin: 10rem;
-        @include tarjeta;
-    }
-}

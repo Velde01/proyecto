@@ -23,23 +23,21 @@ img {
 }
 
 .logo {
-    width: 40%;
-
+    width: 30%;
 }
 
 .minilogo {
-    width: 100px;
+    width: 40px;
 }
 
 /* Header */
 header {
     .navegador {
-        padding-right: 4rem;
+        padding-right: 3rem;
         padding-left: 2rem;
         .navegador-contenedor {
             .nav-cont-botones {
                 .botones {
-                    gap: 3rem;
                     .navboton {
                         color: $color-secundario;
                         font-size: 1.5rem;
@@ -60,4 +58,5 @@ header {
     text-align: center;
     background-color: $color-footer;
     padding-top: 1rem;
+    padding-bottom: 1rem;
 }

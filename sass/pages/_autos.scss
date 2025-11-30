@@ -24,24 +24,3 @@
         }
     }
 }
-
-/* estilos de tablet-autos */
-@media screen and (min-width: 600px) {
-    .contenedor-autos {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10% 1fr 1fr;
-        .titulo-autos {
-            grid-column: span 2;
-        }
-    }      
-}
-
-/* estilos de desktop-autos */
-@media screen and (min-width: 1024px) {
-    .contenedor-autos {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        .titulo-autos {
-            grid-column: span 4;
-        }
-    }
-}

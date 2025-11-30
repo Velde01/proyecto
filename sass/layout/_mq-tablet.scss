@@ -1,0 +1,27 @@
+//Variables
+@use "../utilities/variables" as *;
+//Mixin
+@use "../utilities/mixin" as *;
+
+/* estilos de tablet */
+@media screen and (min-width: 600px){
+    /* estilos de tablet-index */
+    main {
+        .main-principal {
+            .main-principal-section2{
+                .mas-visto-grid {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+        }
+    }
+
+    /* estilos de tablet-autos */
+    .contenedor-autos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10% 1fr 1fr;
+        .titulo-autos {
+            grid-column: span 2;
+        }
+    }  
+}
