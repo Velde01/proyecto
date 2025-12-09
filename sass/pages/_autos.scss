@@ -6,10 +6,16 @@
 /* Main-autos */
 .contenedor-autos {
     @include centralizado;
-    display: grid;
-    grid-template-columns: 1fr;
     .grid-autos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
         .tarjeta-auto{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            text-align: center;
             @include tarjeta;
             transition: all 0.3s ease-in-out;
             &:hover {

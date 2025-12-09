@@ -18,10 +18,11 @@
 
     /* estilos de tablet-autos */
     .contenedor-autos {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10% 1fr 1fr;
-        .titulo-autos {
-            grid-column: span 2;
+        .grid-autos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
         }
     }  
 }
+

@@ -4,8 +4,10 @@
 @use "../utilities/mixin" as *;
 
 .contenedor-contacto {
+    text-align: center;
     padding: 1rem;
     .formulario {
+        align-items: center;
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
